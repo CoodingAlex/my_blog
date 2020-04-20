@@ -6,4 +6,10 @@
 }
 .PostCard-container {
   max-width: 540px;
+  height: auto;
+}
+
+.PostCard-img {
+  max-height: 220px;
+  max-width: 500px;
 }

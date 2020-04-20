@@ -1,6 +1,6 @@
 import React from 'react';
 import fakePosts from '../assets/mocks/fakePosts'
-
+import '../assets/styles/PostPage.css'
 function getPost(id) {
   return fakePosts.filter(post => post.id.toString() === id)[0]
 }
@@ -14,7 +14,9 @@ function Post(props) {
       <div className="row">
         <div className="col"></div>
         <div className="col-8 pt-5">
-          <img src={post.img} alt="" />
+          {post.img && (
+            <img src={post.img} class="PostPage-img" alt="" />
+          )}
           <h1>{post.title}</h1>
           <p>{post.content}</p></div>
         <div className="col"></div>
