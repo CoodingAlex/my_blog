@@ -1,0 +1,9 @@
+.PostCard {
+  max-height: 400px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.PostCard-container {
+  max-width: 540px;
+}

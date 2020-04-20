@@ -1,0 +1,8 @@
+.Header {
+  width: 100%;
+  background: #e6e9ed;
+}
+.Header-container {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
