@@ -13,7 +13,6 @@ function App() {
           <Route exact path="/" component={Main} />
           <Route exact path="/posts" component={Posts} />
           <Route exact path="/posts/:id" component={PostPage} />
-          <Route exact path="/write" component={Write} />
         </Switch>
       </Layout>
     </BrowserRouter>

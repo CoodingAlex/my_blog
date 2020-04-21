@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../assets/styles/Write.css'
-
+import { Editor } from '@tinymce/tinymce-react'
 
 function Write(props) {
   const [content, setContent] = useState({})
@@ -21,11 +21,15 @@ function Write(props) {
             onChange={(e) => setContent({ ...content, title: e.target.value })}
           />
           <label >Contenido</label>
-          <textarea name="Contenido del post"
-            className="form-control"
-            cols="30" rows="10"
-            onChange={(e) => setContent({ ...content, text: e.target.value })}
+          <Editor
+            apiKey="7tyhcu6axrg8z9wrrq05zh8lesujqvszc2ns25o35n0o4lri"
+            init={{ /* your other settings */ }}
+            onChange={(e) => setContent({ ...content, text: e.target.getContent() })
+            }
           />
+
+
+
           <button type="submit" className="btn btn-primary mb-2" onClick={handleSubmit}>Agregar Post</button>
 
         </form>

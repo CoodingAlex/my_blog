@@ -11,7 +11,7 @@ function Main() {
             <h1 className="Hero-title-text">El Blog para los iniciados en el <br />
             Mundo del Desarrollo del software
           </h1>
-            <Link to="/write"><button className="btn btn-primary">Haz tu primer post</button></Link>
+            <Link to="/posts"><button className="btn btn-primary">Ver los posts</button></Link>
           </div>
         </div>
       </div>

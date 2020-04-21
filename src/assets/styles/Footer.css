@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+
+.Footer-container {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  position: relative;
+}
+.Footer {
+  padding-top: 80px;
+
+  height: 100%;
+}
+
+p {
+  font-family: "Bree Serif", serif;
+
+  padding-right: 10px;
+
+  padding-left: 10px;
+}
