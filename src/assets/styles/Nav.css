@@ -1,8 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Viga&display=swap");
 .Header {
+  z-index: 1;
   width: 100%;
-  background: #e6e9ed;
+  background: #ffffff;
 }
+
 .Header-container {
   padding-left: 10vw;
   padding-right: 10vw;
+}
+.Header-title {
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+}
+
+.Header-sections {
+  font-family: "Viga", sans-serif;
 }

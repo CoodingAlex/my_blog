@@ -1,0 +1,8 @@
+.Write {
+  display: flex;
+  justify-content: center;
+}
+
+.Write-container {
+  width: 50%;
+}

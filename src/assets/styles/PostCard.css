@@ -3,13 +3,24 @@
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
+  animation-name: post-card-animation;
+  animation-duration: 1s;
 }
 .PostCard-container {
   max-width: 540px;
-  height: auto;
+  display: inline;
 }
 
 .PostCard-img {
   max-height: 220px;
   max-width: 500px;
+}
+
+@keyframes post-card-animation {
+  from {
+    margin-left: 300%;
+  }
+  to {
+    opacity: 100%;
+  }
 }

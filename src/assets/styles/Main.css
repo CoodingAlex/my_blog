@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+
+.Hero-title {
+  color: black;
+}
+.Hero-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bree Serif", serif;
+}
+.Hero {
+  height: 500px;
+}
+.Hero-title-text {
+  line-height: 2;
+  font-size: 60px;
+  overflow: hidden;
+  animation-duration: 1s;
+  animation-name: transparent-text;
+  animation-direction: alternate;
+}
+
+@keyframes transparent-text {
+  from {
+    font-size: 80%;
+  }
+
+  to {
+    font-size: 60px;
+  }
+}
