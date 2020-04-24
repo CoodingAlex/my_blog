@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../assets/styles/PostPage.css";
 import axios from "axios";
-const API = (id) => `https://coodingalex-blog-api.herokuapp.com/posts/${id}`;
+const API = (id) =>
+  `https://coodingalex-blog-api.herokuapp.com/posts/post/${id}`;
 const Post = (props) => {
   const [post, setPost] = useState({});
   useEffect(() => {
