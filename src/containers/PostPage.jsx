@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../assets/styles/PostPage.css";
 import axios from "axios";
-const API = (id) => `http://localhost:3001/posts/post/${id}`;
+const API = (id) => `https://coodingalex-blog-api.herokuapp.com/posts/${id}`;
 const Post = (props) => {
   const [post, setPost] = useState({});
   useEffect(() => {
@@ -9,7 +9,6 @@ const Post = (props) => {
       .get(API(props.match.params.id), { method: "GET" })
       .then((response) => {
         setPost(response.data[0]);
-        console.log(response.data);
       });
   }, []);
 

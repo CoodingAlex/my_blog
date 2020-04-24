@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import PostCardList from "../components/PostCardList";
 import fakePosts from "../assets/mocks/fakePosts";
 import axios from "axios";
-const API = "http://localhost:3001/posts/0";
+const API = "https://coodingalex-blog-api.herokuapp.com/posts/0";
 const Posts = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
@@ -11,6 +11,7 @@ const Posts = () => {
     async function fetchData() {
       const result = await axios(API);
       if (!ignore) setPosts(result.data);
+      console.log(result.data);
     }
 
     fetchData();
